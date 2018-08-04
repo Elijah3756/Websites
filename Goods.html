@@ -1,0 +1,212 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="FinalStylesheet.css" type="text/css"/>
+<style>
+  img{ width: 100%;
+	height: 300px;}  
+</style>
+</head>
+<body
+background= "download.png">
+<div class="wholething">
+<div>
+<img class="banner" src ="logoe.jpg">
+</div>
+
+<ul class="nav">
+<hr/>
+
+
+  <li><a href="Main Page.html">Home</a></li>
+  <li><a href="Cakes.html">Cakes</a></li>
+  <li><a href="Cookies.html">Cookies</a></li>
+  <li><a href="Goods.html">Other Goods</a></li>
+    <li><a href="About.html">About</a></li>
+	  <li><a href="Customs.html">Customs</a></li>
+	<hr>  
+</ul>
+
+<div class="body">
+
+<form name = "myform">
+
+<h1 style="text-align:center;"> </h1>
+
+<table>
+	
+	<tr>
+		
+		<td>
+			<img src ="cake1.jpeg"/>
+				 
+		</td>
+		<td>
+			<img src ="cake2.jpeg"/>
+				 
+		</td>
+			<td>
+			<img src ="cake3.jpeg"/>
+				 
+		</td>
+		<td>
+			<img src ="cake4.jpeg"/>
+				 
+		</td>
+	</tr>
+
+		
+	<tr>
+		<td>
+			<label for="Dark chocolate chip "><b></b> </label>
+
+<input type="Number" id="Dark chocolate chip"><br/>
+				 
+		</td>
+		<td>
+			<label for="Dark chocolate peanut"><b></b> </label>
+
+<input type="Number" id="Dark chocolate peanut"><br/>
+				 
+		</td>
+		<td>
+			<label for="oatmeal raisin"><b></b> </label>
+
+<input type="Number" id="oatmeal raisin"><br/>
+				 
+		</td>
+        <td>
+			<label for="Walnut"><b></b> </label>
+
+<input type="Number" id="Walnut"><br/>
+				 
+		</td>
+	</tr>
+		<tr>
+		
+		<td>
+			<img src ="cake5.jpeg"/>
+				 
+		</td>
+		<td>
+			<img src ="cake6.jpeg"/>
+				 
+		</td>
+			<td>
+			<img src ="cake7.jpeg"/>
+				 
+		</td>
+	
+		<td>
+			<img src ="cake8.jpeg"/>
+				 
+		</td>	
+	</tr>
+
+		
+	<tr>
+		<td>
+			<label for="Dark chocolate chip "><b></b> </label>
+
+<input type="Number" id="Dark chocolate chip"><br/>
+				 
+		</td>
+		<td>
+			<label for="Dark chocolate peanut"><b></b> </label>
+
+<input type="Number" id="Dark chocolate peanut"><br/>
+				 
+		</td>
+		<td>
+			<label for="oatmeal raisin"><b></b> </label>
+
+<input type="Number" id="oatmeal raisin"><br/>
+				 
+		</td>
+        <td>
+			<label for="Walnut"><b></b> </label>
+
+<input type="Number" id="Walnut"><br/>
+				 
+		</td>
+	</tr>
+			<tr>
+		
+		<td>
+			<img src ="cake10.jpeg"/>
+				 
+		</td>
+		<td>
+			<img src ="cake9.jpeg"/>
+				 
+	
+	</tr>
+
+		
+	<tr>
+		<td>
+			<label for="Dark chocolate chip "><b></b> </label>
+
+<input type="Number" id="Dark chocolate chip"><br/>
+				 
+		</td>
+		<td>
+			<label for="Dark chocolate peanut"><b></b> </label>
+
+<input type="Number" id="Dark chocolate peanut"><br/>
+				 
+		</td>
+	
+	</tr>
+</table>
+<hr>
+<br>
+<br>
+<label for="firstname"><b>First name:</b> </label>
+
+<input type="text" id="firstname">
+
+<label for="lastname"><b>Last name: </b></label>
+
+<input type="text" id="lastname">
+
+<label for="email"><b>email: </b></label>
+
+<input type="text" id="email">
+<br>
+<label for="address"><b>Address: </b></label>
+
+<input type="text" id="address">
+<br>
+<br>
+<br>
+
+<button type="button" id="button"> caluculate cost </button>
+
+<p>Total:</p>
+<p id="Total"> &nbsp;</p>
+
+
+</form>
+<script>
+function convert() {
+var totalcost = 0;
+var cost= document.getElementById("Dark chocolate chip").value;
+totalcost += (cost *250);
+var cost= document.getElementById("Dark chocolate peanut").value;
+totalcost += (cost *220);
+var cost= document.getElementById("oatmeal raisin").value;
+totalcost += (cost *100);
+var cost= document.getElementById("Walnut").value;
+totalcost += (cost *100);
+var tax = cost *.04;
+totalcost += tax;
+document.getElementById("Total").innerHTML ="$" + totalcost;
+}
+document.getElementById("button").addEventListener("click", convert,false);
+
+</script>
+</div>
+
+</body>
+</html>

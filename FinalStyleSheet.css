@@ -1,0 +1,128 @@
+ul.nav{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  padding-top:0px;
+  padding-bottom:6px;
+text-align: center;
+font-family: Georgia;
+ font-style: italic;
+}
+ul.nav li{
+  display:inline;
+padding: 3%;
+  
+}
+.banner{
+	height: 40%;
+	width :1000px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 100%;
+}
+table{
+	width: 100%;
+	
+}
+
+a{
+	color: black;
+	
+}
+.wholething {
+  margin-right: auto; 
+  margin-left:  auto; 
+
+  max-width: 1040px; 
+
+  padding-right: 10px; 
+  padding-left:  10px;
+	background-color: white;
+	font-size:20px;
+
+}
+ul.nav a:hover,a:active {
+  opacity: 0.5;
+	
+}
+.table {
+	width: 250px;
+	height:  200px;
+}
+	body {
+	font-family: Georgia;
+	}
+aside {
+   width:300px;
+  font-size:10px;
+    list-style-type:none;
+  margin:0;
+  padding:0;
+  padding-top:0px;
+  padding-bottom:6px;
+text-align: center;
+background-color:white;
+display: block;
+float: left;
+}
+
+aside ul {
+   padding: 20px;
+	 list-style: none;
+	 display:inline
+}
+
+aside ul li {
+   padding: 10px;
+   font-size: 24px;
+	 display:inline
+}
+
+aside ul li:hover {
+   opacity: 0.5;
+}
+
+
+article {
+display: block;
+float: left;
+   text-align: right;
+	 width: 640px;
+}
+
+
+footer {
+   opacity: .1;
+   }
+
+article figure img {
+   display: block;
+}
+
+@media only screen and (max-width: 480px) {
+          nav { float: none;
+                width: auto;
+                margin-top: 0;	
+                text-align: center}
+        body { width: 60%;
+                     margin-left: 5%; }
+           aside, article, table { display: none; }
+		   
+           nav ul { padding-left: 0;}
+         nav li { display: inline;
+         margin: 0 2%;}
+footer{
+   opacity: 1;}
+
+
+				 .wholething
+				 {
+					
+				 }
+
+}
+
+
+
+	

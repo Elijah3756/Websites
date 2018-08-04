@@ -1,0 +1,233 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="FinalStylesheet.css" type="text/css"/>
+<style>
+  img{ width: 100%;
+	height: 300px;}  
+</style>
+</head>
+<body
+background= "download.png">
+<div class="wholething">
+<div>
+<img class="banner" src ="logoe.jpg">
+</div>
+
+<ul class="nav">
+<hr/>
+
+
+  <li><a href="Main Page.html">Home</a></li>
+  <li><a href="Cakes.html">Cakes</a></li>
+  <li><a href="Cookies.html">Cookies</a></li>
+
+    <li><a href="About.html">About</a></li>
+	  <li><a href="Customs.html">Customs</a></li>
+	<hr>  
+</ul>
+
+<div class="body">
+
+<form name = "myform">
+
+<h1 style="text-align:center;"> </h1>
+
+<table>
+	
+	<tr>
+		
+		<td>
+			<img src ="darkchocolatechip.jpeg"/>
+				 
+		</td>
+		<td>
+			<img src ="darkchocolatepeanut.jpeg"/>
+				 
+		</td>
+			<td>
+			<img src ="oatmealraisin.jpeg"/>
+				 
+		</td>
+		<td>
+			<img src ="walnut.jpeg"/>
+				 
+		</td>
+	</tr>
+
+		
+	<tr>
+		<td>
+			<label for="Dark chocolate chip "><b>Dark chocolate chip:$2.50</b> </label>
+
+<input type="Number" id="Dark chocolate chip"><br/>
+				 
+		</td>
+		<td>
+			<label for="Dark chocolate peanut"><b>Dark chocolate peanut:$2.20</b> </label>
+
+<input type="Number" id="Dark chocolate peanut"><br/>
+				 
+		</td>
+		<td>
+			<label for="oatmeal raisin"><b>oatmeal raisin:$1.00</b> </label>
+
+<input type="Number" id="oatmeal raisin"><br/>
+				 
+		</td>
+        <td>
+			<label for="Walnut"><b>Walnut:$1.00</b> </label>
+
+<input type="Number" id="Walnut"><br/>
+				 
+		</td>
+	</tr>
+		<tr>
+		
+		<td>
+			<img src ="Cookies1.jpeg"/>
+				 
+		</td>
+		<td>
+			<img src ="Cookies2.jpeg"/>
+				 
+		</td>
+			<td>
+			<img src ="Cookies3.jpg"/>
+				 
+		</td>
+	
+		<td>
+			<img src ="Cookies4.jpeg"/>
+				 
+		</td>	
+	</tr>
+
+		
+	<tr>
+		<td>
+			<label for="raisin chocolate chip "><b>raisin chocolate chip:$2.50</b> </label>
+
+<input type="Number" id="raisin chocolate chip"><br/>
+				 
+		</td>
+		<td>
+			<label for="Sugar chocolate chip"><b>Sugar chocolate chip:$2.20</b> </label>
+
+<input type="Number" id="Sugar chocolate chip"><br/>
+				 
+		</td>
+		<td>
+			<label for="Oreo"><b>Oreo:$1.00</b> </label>
+
+<input type="Number" id="Oreo"><br/>
+				 
+		</td>
+        <td>
+			<label for="Sugar Cookie"><b>Sugar Cookie:$1.00</b> </label>
+
+<input type="Number" id="Sugar Cookie"><br/>
+				 
+		</td>
+	</tr>
+			<tr>
+		
+		<td>
+			<img src ="Cookies8.jpeg"/>
+				 
+		</td>
+		<td>
+			<img src ="Cookies6.jpeg"/>
+				 
+	
+	</tr>
+
+		
+	<tr>
+		<td>
+			<label for="Chocolate filled cookies "><b>Chocolate filled cookies:$1.50</b> </label>
+
+<input type="Number" id="Chocolate filled cookies"><br/>
+				 
+		</td>
+		<td>
+			<label for="rasberry Sugar Cookie"><b>rasberry Sugar Cookie:$1.50</b> </label>
+
+<input type="Number" id="rasberry Sugar Cookie"><br/>
+				 
+		</td>
+	
+	</tr>
+</table>
+<hr>
+<br>
+<br>
+<label for="firstname"><b>First name:</b> </label>
+
+<input type="text" id="firstname">
+
+<label for="lastname"><b>Last name: </b></label>
+
+<input type="text" id="lastname">
+
+<label for="email"><b>email: </b></label>
+
+<input type="text" id="email">
+<br>
+<label for="address"><b>Address: </b></label>
+
+<input type="text" id="address">
+<br>
+<br>
+<br>
+
+<button type="button" id="button"> caluculate cost </button>
+
+<p>Total:</p>
+<p id="Total"> &nbsp;</p>
+
+
+</form>
+<script>
+function convert() {
+var totalcost = 0;
+var cost= document.getElementById("Dark chocolate chip").value;
+totalcost += (cost *2.50);
+var cost= document.getElementById("Dark chocolate peanut").value;
+totalcost += (cost *2.20);
+var cost= document.getElementById("oatmeal raisin").value;
+totalcost += (cost *1.00);
+var cost= document.getElementById("Walnut").value;
+totalcost += (cost *1.00);
+var cost= document.getElementById("raisin chocolate chip").value;
+totalcost += (cost *2.50);
+var cost= document.getElementById("Sugar chocolate chip").value;
+totalcost += (cost *2.20);
+var cost= document.getElementById("Oreo").value;
+totalcost += (cost *1.00);
+var cost= document.getElementById("Sugar Cookie").value;
+totalcost += (cost *1.00);
+var cost= document.getElementById("Chocolate filled cookies").value;
+totalcost += (cost *1.50);
+var cost= document.getElementById("rasberry Sugar Cookie").value;
+totalcost += (cost *1.50);
+var tax = cost *.04;
+
+
+totalcost += tax;
+document.getElementById("Total").innerHTML ="$" + totalcost;
+}
+document.getElementById("button").addEventListener("click", convert,false);
+
+</script>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
