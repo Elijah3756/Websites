@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title> Eli's Sneakers</title>
+<script src="modernizr.custom.05819.js"></script>
+<style>
+
+</style>
+<link rel="stylesheet" href="FinalStylesheet.css" type="text/css"/>
+</head>
+<body>
+
+<form name = "myform"/>
+<h1 style="text-align:center;">Nike 
+<ul class="nav">
+  <li><a href="Main Page.html">Home</a></li>
+  <li><a href="Nike.html">Nike</a></li>
+  <li><a href="Adidas.html">Adidas</a></li>
+  <li><a href="Vans.html">Vans</a></li>
+</ul>
+<br>
+
+<table>
+	
+	<tr>
+	<img class="nike" 
+		 src= "NikeLogo.jpg" alt = "Nike logo"  >
+		</tr>
+		<tr> 
+		<h2>
+		Description
+		</h2>
+		<fieldset>The Nike Airmax 95 boasts classic style and with a comfortable step. At only $190 The Nike Airmax 95 has 
+
+
+</fieldset>
+		</tr>
+	
+</table>
+<hr>
+
+
+
+
+</body>
+</html>

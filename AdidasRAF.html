@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Forms Website</title>
+<script src="modernizr.custom.05819.js"></script>
+<style>
+
+</style>
+<link rel="stylesheet" href="FinalStylesheet.css" type="text/css"/>
+</head>
+<body>
+
+<form name = "myform"\>
+<h1 style="text-align:center;">Adidas Raf Simions </h1>
+<br>
+<ul class="nav">
+  <li><a href="Main Page.html">Home</a></li>
+  <li><a href="Nike.html">Nike</a></li>
+  <li><a href="Adidas.html">Adidas</a></li>
+  <li><a href="Vans.html">Vans</a></li>
+</ul>
+<br>
+
+<table>
+	
+	<tr>
+	
+		<img src= "AdidasRAF.jpg" alt = "adidas RAF simoins"  >
+		</tr>
+		<tr> 
+		<h2>
+		Description
+		</h2>
+		<fieldset>
+			At $250 these sneakers are from Raf Simons new collection in collaboration with Adidas. The sneaker, here in a all black, takes a futuristic approach in a two layer upper with a running inspired profile and details made of silicone. The Ozweego III sneakers feature a leather and textile upper, mesh lining, EVA midsole, Poron performance cushioning sockliner and a rubber outsole.
+		</fieldset>
+		</tr>
+	
+</table>
+<hr>
+<fieldset>
+<label for = "Size"><b>Size</b></label>
+<input type="number" id="Size">
+<label for = "Amount"><b>Amount</b></label>
+<input type="number" id="Amount">
+</fieldset>
+<fieldset>
+<label for="firstname"><b>First name:</b> </label>
+
+<input type="text" id="firstname">
+<br>
+<label for="lastname"><b>Last name: </b></label>
+
+<input type="text" id="lastname">
+<br>
+<label for="email"><b>email: </b></label>
+
+<input type="text" id="email">
+
+<br>
+<label for="address"><b>Address: </b></label>
+
+<input type="text" id="address">
+</fieldset>
+<br>
+<br>
+<br>
+
+<button type="button" id="button"> Submit</button>
+
+<p>Total:</p>
+<p id="Total"> &nbsp;</p>
+
+
+</form>
+<script>
+function convert() {
+var totalcost = 0;
+var cost= document.getElementById("Amount").value;
+totalcost += (cost *250);
+
+var tax = cost *.04;
+totalcost += tax;
+document.getElementById("Total").innerHTML ="$" + totalcost;
+}
+document.getElementById("button").addEventListener("click", convert,false);
+
+</script>
+
+</body>
+</html>
